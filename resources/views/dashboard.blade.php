@@ -1,5 +1,5 @@
 @extends('templet.main')
 
 @section('content')
-    coba
+ Dashboard
 @endsection
