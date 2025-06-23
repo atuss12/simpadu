@@ -19,7 +19,7 @@ use App\Http\Controllers\MahasiswaController;
 // return view('dashboard');
 //});
 
-//route::get('/', [DashboardController::class, 'index']);
+route::get('/', [DashboardController::class, 'index']);
 //route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 //route::post('/mahasiswa', [MahasiswaController::class, 'store']);
 //route::get('/mahasiswa/create', [MahasiswaController::class, 'create']);
