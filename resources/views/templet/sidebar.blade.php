@@ -6,9 +6,7 @@
       <a href="./index.html" class="brand-link">
         <!--begin::Brand Image-->
         <img
-          src="../assets/img/AdminLTELogo.png"
-          alt="AdminLTE Logo"
-          class="brand-image opacity-75 shadow" />
+          src="{{ asset('assets/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image opacity-75 shadow" />
         <!--end::Brand Image-->
         <!--begin::Brand Text-->
         <span class="brand-text fw-light">SIMPADU</span>

@@ -49,6 +49,7 @@
                                         <th>NAMA</th>
                                         <th>TELP</th>
                                         <th>PRODI</th>
+                                        <th>FOTO</th>
                                         <th>AKSI</th>
                                     </tr>
                                 </thead>
@@ -60,6 +61,8 @@
                                             <td>{{ $m->nama }}</td>
                                             <td>{{ $m->telp }}</td>
                                             <td>{{ $m->prodi->nama }}</td>
+                                            <td> <img src="{{ asset('storage/' . $m->foto) }}" width="100px"
+                                                height="100px" /> </td>
                                             <td> <a href= "{{ url("mahasiswa/$m->nim/edit") }}" 
                                                 class="btn btn-warning">Edit</a>
                                                 <form action={{ url("mahasiswa/$m->nim") }} method="post"
@@ -74,7 +77,6 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                            <a href="logout.php">keluar</a>
                             </table>
                         </div>
                         <!-- /.card-body -->

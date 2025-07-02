@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\ProdiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,4 @@ route::get('/', [DashboardController::class, 'index']);
 //route::post('/mahasiswa', [MahasiswaController::class, 'store']);
 //route::get('/mahasiswa/create', [MahasiswaController::class, 'create']);
 route::resource('/mahasiswa', MahasiswaController::class);
+route::resource('/prodi', ProdiController::class);
